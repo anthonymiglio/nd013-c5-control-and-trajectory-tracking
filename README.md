@@ -122,7 +122,6 @@ The ego car autonomously in the CARLA simulator at each obstacle avoidence.
 |:---------------------------------------:|:---------------------------------------:|
 | <img src="/img/PID_control_2.png"/>     | <img src="/img/PID_control_3.png"/>     |
 | Right take over a car on the lane.      | Arrived and stopped at Stop Sign.       |
-|:---------------------------------------:|:---------------------------------------:|
 | <img src="/img/PID_control_4.png"/>     | <img src="/img/PID_control_5.png"/>     |
 
 
@@ -144,10 +143,12 @@ PID coeffitients: **Kp**, **Kd**, **Ki**.
 The Twiddle function is a way to tune the PID parameter automatically. Twiddle might be dangerous in a real-world self-driving vehicle application. Therefore, the traditional method is to measure the reaction signal of the hardware and calculate the mathematical representation to get a similar output signal, then tune a model.
 
 - PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+
 Pros:
 1. Not complex and simple to understand.
 2. Car boundries are not considered.
 3. Applicable to autonomous systems and vehicles.
+
 Cons: 
 1. The differential and integral factors make it non-linear for the changes.
 2. One parameter affects the final result by a change in the other parameter.
