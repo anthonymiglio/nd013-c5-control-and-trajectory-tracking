@@ -111,13 +111,13 @@ pip3 install matplotlib
 ## Project Report:
 
 Answer the following questions:
-- Add the plots to your report and explain them (describe what you see)
+### Add the plots to your report and explain them (describe what you see)
 
 The image below shows the ego car in the CARLA simulator at the starting point.
 <img src="/img/PID_control_1.png"/>
 
-The ego car autonomously in the CARLA simulator at each obstacle avoidence.
 
+The ego car autonomously in the CARLA simulator at each obstacle avoidence:
 | Left take over a car on the lane.       | Righ turn to avoid a parked car.        |
 |:---------------------------------------:|:---------------------------------------:|
 | <img src="/img/PID_control_2.png"/>     | <img src="/img/PID_control_3.png"/>     |
@@ -125,7 +125,7 @@ The ego car autonomously in the CARLA simulator at each obstacle avoidence.
 | <img src="/img/PID_control_4.png"/>     | <img src="/img/PID_control_5.png"/>     |
 
 
-- What is the effect of the PID according to the plots, how each part of the PID affects the control command?
+### What is the effect of the PID according to the plots, how each part of the PID affects the control command?
 
 | Plot: PID Steering Errors               | Plot: PID Throttle Errors               |
 |:---------------------------------------:|:---------------------------------------:|
@@ -139,19 +139,19 @@ PID coeffitients: **Kp**, **Kd**, **Ki**.
 **Kd** applies a counterforce opposite to the oscillations. This item is produced based on the error gradient, not the error itself. So Kd will flatten the error into a horizontal line.
 **Ki** increases with iterations and helps to reduce the error to zero. A high value will make the error smaller. When the error is stable, ki is needed to delete the error. 
 
-- How would you design a way to automatically tune the PID parameters?
+### How would you design a way to automatically tune the PID parameters?
 The Twiddle function is a way to tune the PID parameter automatically. Twiddle might be dangerous in a real-world self-driving vehicle application. Therefore, the traditional method is to measure the reaction signal of the hardware and calculate the mathematical representation to get a similar output signal, then tune a model.
 
-- PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+### PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
 
-Pros:
+**Pros**: 
 1. Not complex and simple to understand.
 2. Car boundries are not considered.
 3. Applicable to autonomous systems and vehicles.
 
-Cons: 
+**Cons**: 
 1. The differential and integral factors make it non-linear for the changes.
 2. One parameter affects the final result by a change in the other parameter.
 
-- (Optional) What would you do to improve the PID controller?
+### (Optional) What would you do to improve the PID controller?
 I would implement the Twiddle algorithm to improve by fine-tuning the PID controller.
