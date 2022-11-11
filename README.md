@@ -128,7 +128,7 @@ The ego car autonomously in the CARLA simulator at each obstacle avoidence.
 
 | Plot: PID Steering Errors               | Plot: PID Throttle Errors               |
 |:---------------------------------------:|:---------------------------------------:|
-| <img src="/img/PID_control_2.png"/>     | <img src="/img/PID_control_3.png"/>     |
+| <img src="/img/PID_plot_steering.png"/> | <img src="/img/PID_plot_throttle.png"/> |
 
 **Steering plot**: In the beginning, an oscillation with significant steering errors is kept along the ride by the iterations. The peaks are avoided obstacles on the road while always recovering to keep on track.
 **Throttle plot**: In the beginning, a large oscillation with a significant throttle error due to the rapid starting acceleration decreases along the iterations to a smoother speed for safer obstacle avoidance.
