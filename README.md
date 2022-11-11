@@ -117,10 +117,12 @@ The image below shows the ego car in the CARLA simulator at the starting point.
 <img src="/img/PID_control_1.png"/>
 
 The ego car autonomously in the CARLA simulator at each obstacle avoidence.
-|:---------------------------------------:|:---------------------------------------:|
+
 | Left take over a car on the lane.       | Righ turn to avoid a parked car.        |
+|:---------------------------------------:|:---------------------------------------:|
 | <img src="/img/PID_control_2.png"/>     | <img src="/img/PID_control_3.png"/>     |
 | Right take over a car on the lane.      | Arrived and stopped at Stop Sign.       |
+|:---------------------------------------:|:---------------------------------------:|
 | <img src="/img/PID_control_4.png"/>     | <img src="/img/PID_control_5.png"/>     |
 
 
