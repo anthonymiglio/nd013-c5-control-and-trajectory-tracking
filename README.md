@@ -111,7 +111,7 @@ pip3 install matplotlib
 ## Project Report:
 
 Answer the following questions:
-### Add the plots to your report and explain them (describe what you see)
+### Add the plots to your report and explain them.
 
 The image below shows the ego car in the CARLA simulator at the starting point.
 <img src="/img/PID_control_1.png"/>
@@ -132,6 +132,7 @@ The ego car autonomously in the CARLA simulator at each obstacle avoidence:
 | <img src="/img/PID_plot_steering.png"/> | <img src="/img/PID_plot_throttle.png"/> |
 
 **Steering plot**: In the beginning, an oscillation with significant steering errors is kept along the ride by the iterations. The peaks are avoided obstacles on the road while always recovering to keep on track.
+
 **Throttle plot**: In the beginning, a large oscillation with a significant throttle error due to the rapid starting acceleration decreases along the iterations to a smoother speed for safer obstacle avoidance.
 
 PID coeffitients: **Kp**, **Kd**, **Ki**.
@@ -153,5 +154,5 @@ The Twiddle function is a way to tune the PID parameter automatically. Twiddle m
 1. The differential and integral factors make it non-linear for the changes.
 2. One parameter affects the final result by a change in the other parameter.
 
-### (Optional) What would you do to improve the PID controller?
+#### (Optional) What would you do to improve the PID controller?
 I would implement the Twiddle algorithm to improve by fine-tuning the PID controller.
