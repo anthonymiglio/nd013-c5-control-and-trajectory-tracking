@@ -110,9 +110,6 @@ pip3 install matplotlib
 
 ## Project Report:
 
-Answer the following questions:
-### Add the plots to your report and explain them.
-
 The image below shows the ego car in the CARLA simulator at the starting point.
 <img src="/img/PID_control_1.png"/>
 
@@ -154,5 +151,5 @@ The Twiddle function is a way to tune the PID parameter automatically. Twiddle m
 1. The differential and integral factors make it non-linear for the changes.
 2. One parameter affects the final result by a change in the other parameter.
 
-### (Optional) What would you do to improve the PID controller?
+### What would you do to improve the PID controller?
 I would implement the Twiddle algorithm to improve by fine-tuning the PID controller.
