@@ -4,7 +4,7 @@
 
 In this project, I have applied the skills acquired in this course to design a PID controller to perform vehicle trajectory tracking. Given a trajectory as an array of locations, and a simulation environment, I have designed and code a PID controller and test its efficiency on the CARLA simulator used in the industry.
 
-### Installation
+## Installation
 
 Run the following commands to install the starter code in the Udacity Workspace:
 
@@ -12,7 +12,7 @@ Clone the <a href="https://github.com/udacity/nd013-c6-control-starter/tree/mast
 
 `git clone https://github.com/udacity/nd013-c6-control-starter.git`
 
-## Run Carla Simulator
+### Run Carla Simulator
 
 Open new window
 
@@ -21,7 +21,7 @@ Open new window
 * `cd /opt/carla-simulator/`
 * `SDL_VIDEODRIVER=offscreen ./CarlaUE4.sh -opengl`
 
-## Compile and Run the Controller
+### Compile and Run the Controller
 
 Open new window
 
@@ -33,7 +33,7 @@ Open new window
 * `cmake .`
 * `make` (This last command compiles your c++ code, run it after every change in your code)
 
-## Testing
+### Testing
 
 To test your installation run the following commands.
 
